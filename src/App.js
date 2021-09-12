@@ -26,9 +26,49 @@ function App() {
 
 function Navbar(props) {
 	return (
-		<nav className="navbar">
-			<ul className="navbar-nav">{props.children}</ul>
-		</nav>
+		<div>
+			<nav className="navbar">
+				<ul className="navbar-nav">{props.children}</ul>
+			</nav>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<nav className="navbar">
+				<ul className="navbar-nav">
+					<NavItem icon={<PlusIcon />} />
+					<NavItem icon={<BellIcon />} />
+					<NavItem icon={<BoltIcon />} />
+					<NavItem icon={<CaretIcon />} />
+					<NavItem icon={<ChevronIcon />} />
+					<NavItem icon={<CogIcon />} />
+					<NavItem icon={<MessengerIcon />} />
+					<NavItem icon={<PlusIcon />} />
+					<NavItem icon={<ArrowIcon />}>
+						<p> Hello World!</p>
+					</NavItem>
+				</ul>
+			</nav>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<nav className="navbar">
+				<ul className="navbar-nav">
+					<NavItem icon="&#128516;" />
+					<NavItem icon="&#129361;" />
+					<NavItem icon="&#129377;" />
+					<NavItem icon="&#129379;" />
+					<NavItem icon="&#128251;" />
+					<NavItem icon="&#127759;" />
+					<NavItem icon="&#127790;" />
+					<NavItem icon="&#127815;" />
+					<NavItem icon="&#127836;" />
+				</ul>
+			</nav>
+		</div>
 	);
 }
 
@@ -88,7 +128,9 @@ function DropdownMenu() {
 				onEnter={calcHeight}
 			>
 				<div className="menu">
-					<DropdownItem>My Profile</DropdownItem>
+					<DropdownItem leftIcon={<ChevronIcon />}>
+						My Profile
+					</DropdownItem>
 					<DropdownItem leftIcon={<CogIcon />} goToMenu="settings">
 						Settings
 					</DropdownItem>

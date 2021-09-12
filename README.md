@@ -6,4 +6,4 @@ https://github.com/fireship-io/229-multi-level-dropdown
 ## Tools Used
 
 -   ### React Transition Group
-          - **npm install react-transition-group**
+    -   **npm install react-transition-group**
